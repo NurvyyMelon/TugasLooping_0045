@@ -81,3 +81,4 @@ case 0:
 // Fungsi mengembalikan true jika angka adalah prima
 bool isPrima(int n) { ... }
 if (n <= 1) return false; // Memastikan 0 dan 1 dihandle dengan benar
+cout << ">> Bilangan " << angka << " adalah Prima." << endl;
