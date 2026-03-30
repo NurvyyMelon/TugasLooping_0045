@@ -60,3 +60,9 @@ int main() {
     }
     return 0;
 }
+// Di dalam while loop main:
+tampilkanMenu();
+switch(pilihan) {
+    case 1: inputAngka(); tampilkanHasilPrima(); break;
+    case 2: inputAngka(); tampilkanHasilFibonacci(); break;
+}
