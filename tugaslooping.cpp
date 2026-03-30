@@ -41,3 +41,7 @@ void inputAngka() {
     cout << "Masukkan angka: ";
     cin >> angka;
 }
+void tampilkanMenu() {
+    cout << "\n1. Cek Prima\n2. Cek Fibonacci\n0. Keluar\nPilih: ";
+    cin >> pilihan;
+}
