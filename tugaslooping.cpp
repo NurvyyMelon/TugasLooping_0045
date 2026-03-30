@@ -45,3 +45,7 @@ void tampilkanMenu() {
     cout << "\n1. Cek Prima\n2. Cek Fibonacci\n0. Keluar\nPilih: ";
     cin >> pilihan;
 }
+void tampilkanHasilPrima() {
+    if (isPrima(angka)) cout << "Hasil: Prima\n";
+    else cout << "Hasil: Bukan Prima\n";
+}
