@@ -1,21 +1,10 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    return 0;
-}
-#include <iostream>
-using namespace std;
-
+// Global
 int angka;
 int pilihan;
 
-int main() {
-    return 0;
-}
-// ... (code sebelumnya)
-bool isPrima(int n);
-// ...
 bool isPrima(int n) {
     if (n <= 1) return false;
     int i = 2;
@@ -25,7 +14,7 @@ bool isPrima(int n) {
     }
     return true;
 }
-bool isFibonacci(int n);
+
 bool isFibonacci(int n) {
     if (n < 0) return false;
     int a = 0, b = 1;
@@ -37,48 +26,53 @@ bool isFibonacci(int n) {
     }
     return false;
 }
+
 void inputAngka() {
-    cout << "Masukkan angka: ";
+    cout << "Masukkan angka yang ingin dicek: ";
     cin >> angka;
 }
+
 void tampilkanMenu() {
-    cout << "\n1. Cek Prima\n2. Cek Fibonacci\n0. Keluar\nPilih: ";
+    cout << "\n=============================" << endl;
+    cout << "1. Cek Bilangan Prima" << endl;
+    cout << "2. Cek Bilangan Fibonacci" << endl;
+    cout << "0. Keluar" << endl;
+    cout << "=============================" << endl;
+    cout << "Pilihan Anda: ";
     cin >> pilihan;
 }
+
 void tampilkanHasilPrima() {
-    if (isPrima(angka)) cout << "Hasil: Prima\n";
-    else cout << "Hasil: Bukan Prima\n";
+    if (isPrima(angka)) cout << ">> " << angka << " adalah bilangan PRIMA.\n";
+    else cout << ">> " << angka << " BUKAN bilangan prima.\n";
 }
+
 void tampilkanHasilFibonacci() {
-    if (isFibonacci(angka)) cout << "Hasil: Fibonacci\n";
-    else cout << "Hasil: Bukan Fibonacci\n";
+    if (isFibonacci(angka)) cout << ">> " << angka << " adalah bagian FIBONACCI.\n";
+    else cout << ">> " << angka << " BUKAN bagian fibonacci.\n";
 }
+
 int main() {
-    bool jalan = true;
-    while (jalan) {
-        // Menu akan diletakkan di sini
+    bool running = true;
+    while (running) {
+        tampilkanMenu();
+        switch (pilihan) {
+            case 1:
+                inputAngka();
+                tampilkanHasilPrima();
+                break;
+            case 2:
+                inputAngka();
+                tampilkanHasilFibonacci();
+                break;
+            case 0:
+                cout << "Terima kasih telah menggunakan program ini!" << endl;
+                running = false;
+                break;
+            default:
+                cout << "Pilihan tidak tersedia. Gunakan 0, 1, atau 2." << endl;
+                break;
+        }
     }
     return 0;
 }
-// Di dalam while loop main:
-tampilkanMenu();
-switch(pilihan) {
-    case 1: inputAngka(); tampilkanHasilPrima(); break;
-    case 2: inputAngka(); tampilkanHasilFibonacci(); break;
-}
-case 0: 
-    cout << "Program Selesai.\n";
-    jalan = false; 
-    break;
-    default:
-    cout << "Pilihan tidak valid!\n";
-    break;
-    void tampilkanMenu() {
-    cout << "\n====================\n   MENU UTAMA\n====================\n";
-    // ... isi menu
-}
-// Mengganti nama variabel 'jalan' menjadi 'running' untuk standar koding.
-// Fungsi mengembalikan true jika angka adalah prima
-bool isPrima(int n) { ... }
-if (n <= 1) return false; // Memastikan 0 dan 1 dihandle dengan benar
-cout << ">> Bilangan " << angka << " adalah Prima." << endl;
