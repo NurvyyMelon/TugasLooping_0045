@@ -77,3 +77,4 @@ case 0:
     cout << "\n====================\n   MENU UTAMA\n====================\n";
     // ... isi menu
 }
+// Mengganti nama variabel 'jalan' menjadi 'running' untuk standar koding.
