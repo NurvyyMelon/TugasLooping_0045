@@ -73,3 +73,7 @@ case 0:
     default:
     cout << "Pilihan tidak valid!\n";
     break;
+    void tampilkanMenu() {
+    cout << "\n====================\n   MENU UTAMA\n====================\n";
+    // ... isi menu
+}
