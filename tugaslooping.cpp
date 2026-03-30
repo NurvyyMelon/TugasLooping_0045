@@ -49,3 +49,7 @@ void tampilkanHasilPrima() {
     if (isPrima(angka)) cout << "Hasil: Prima\n";
     else cout << "Hasil: Bukan Prima\n";
 }
+void tampilkanHasilFibonacci() {
+    if (isFibonacci(angka)) cout << "Hasil: Fibonacci\n";
+    else cout << "Hasil: Bukan Fibonacci\n";
+}
