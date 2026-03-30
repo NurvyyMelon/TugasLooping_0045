@@ -70,3 +70,6 @@ case 0:
     cout << "Program Selesai.\n";
     jalan = false; 
     break;
+    default:
+    cout << "Pilihan tidak valid!\n";
+    break;
