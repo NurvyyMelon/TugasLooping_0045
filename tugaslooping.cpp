@@ -78,3 +78,5 @@ case 0:
     // ... isi menu
 }
 // Mengganti nama variabel 'jalan' menjadi 'running' untuk standar koding.
+// Fungsi mengembalikan true jika angka adalah prima
+bool isPrima(int n) { ... }
