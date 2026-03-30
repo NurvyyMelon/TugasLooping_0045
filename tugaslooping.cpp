@@ -66,3 +66,7 @@ switch(pilihan) {
     case 1: inputAngka(); tampilkanHasilPrima(); break;
     case 2: inputAngka(); tampilkanHasilFibonacci(); break;
 }
+case 0: 
+    cout << "Program Selesai.\n";
+    jalan = false; 
+    break;
