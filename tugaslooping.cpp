@@ -53,3 +53,10 @@ void tampilkanHasilFibonacci() {
     if (isFibonacci(angka)) cout << "Hasil: Fibonacci\n";
     else cout << "Hasil: Bukan Fibonacci\n";
 }
+int main() {
+    bool jalan = true;
+    while (jalan) {
+        // Menu akan diletakkan di sini
+    }
+    return 0;
+}
