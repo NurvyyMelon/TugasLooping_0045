@@ -13,3 +13,6 @@ int pilihan;
 int main() {
     return 0;
 }
+// ... (code sebelumnya)
+bool isPrima(int n);
+// ...
